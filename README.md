@@ -6,6 +6,6 @@ Pulls the CSRF token from Rails for use in POSTing(Can't verify CSRF token authe
 To use:
 - Clone this repo to your "Construct 2\exporters\html5\plugins" folder.
 - Add the object "RailsCSRFToC2Bridge" in your project
-- Use its expression "RailsCSRFToC2Bridge.getCSRFToken", which returns the CSRF
-  token in Rails' <% csrf_meta_tags %> helper. An example:
-  '''score="&player_score&"&authenticity_token="&RailsCSRFToC2Bridge.getCSRFToken'''
+- Use its expression "RailsCSRFToC2Bridge.getCSRFToken", contained in a URLEncode(). 
+ An example:
+  '''score="&player_score&"&authenticity_token="&URLEncode(RailsCSRFToC2Bridge.getCSRFToken)'''
