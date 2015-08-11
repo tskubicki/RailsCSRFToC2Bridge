@@ -1,6 +1,6 @@
 # RailsCSRFToC2Bridge (Rails CSRF Token to Construct 2 Bridge)
 
-A simple plugin that allows a Construct 2 project to be able to POST a Rails setup that utilizes CSRF protections. 
+A simple Construct 2 plugin that allows a project to be able to POST a Rails setup that utilizes CSRF protections. 
 Pulls the CSRF token from Rails for use in POSTing(Can't verify CSRF token authenticity)
 
 To use:
